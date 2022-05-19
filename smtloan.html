@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Approval System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Smart Banking developed by using Microsoft Azure">
+    <meta name="author" content="Conossieurs">
+    <title></title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+    
+</head> 
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="index.html">Home</a></li> 
+						                       
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section class="download-now" id="products">
+        <div class="container">
+		 <div class="section-header">
+                <h2 class="section-title wow fadeInDown">
+                    Smart Loan Approval Application</h2>
+                <!--<p class="wow fadeInDown"> <br> </p>
+            </div>-->
+			
+          <div class="row">
+            <div class="col-md-6 wp1 animated fadeInUp"> 
+                <form action="http://20.97.10.88/cgi-bin/loanMLCall.py">
+
+                    <h2>Kindly fill the following information required for the loan approval stage:</h2><br>
+                    
+                    <label><b><h3>1. Select Gender: </h3></b></label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male"><h4>Male</h4></label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female"><h4>Female</h4></label><br>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other"><h4>Other</h4></label><br>
+                    <br />
+    
+                    <label><b><h3>2. Married status: </h3></b></label><br>
+                    <input type="radio" id="Yes" name="mrd" value="Yes"/>
+                    <label for="Yes"><h4>Yes</h4></label><br>
+                    <input type="radio" id="No" name="mrd" value="No" />
+                    <label for="No"><h4>No</h4></label><br>
+                    <br />
+    
+                    <label><b><h3>3. Number of Dependants: </h3></b></label><br>
+                    <input type="text" style="color: black;" name="depend"/><br>
+                    <br />
+    
+                    <label><b><h3>4. Education: </h3></b></label><br>
+                    <input type="radio" id="graduate" name="edu" value="Graduate"/>
+                    <label for="Yes"><h4>Graduate</h4></label><br>
+                    <input type="radio" id="Not Graduate" name="edu" value="Not Graduate" />
+                    <label for="Not Graduate"><h4>Not Graduate</h4></label><br>
+                    <br />
+    
+                    <label><b><h3>5. Self Employed </h3></b></label><br>
+                    <input type="radio" id="Yes" name="emp" value="Yes"/>
+                    <label for="Yes"><h4>Yes</h4></label><br>
+                    <input type="radio" id="No" name="emp" value="No" />
+                    <label for="No"><h4>No</h4></label><br>
+                    <br />
+    
+                    <label><b><h3>6. Income: </h3></b></label><br>
+                    <input type="text" style="color: black;" name="income"/><br>
+                    <br />
+    
+                    <label><b><h3>7. Co-Applicant Income: </h3></b></label><br>
+                    <input type="text" style="color: black;" name="coincome"/><br>
+                    <br />
+    
+                    <label><b><h3>8. Loan Amount: </h3></b></label><br>
+                    <input type="text" style="color: black;" name="loanamt"/><br>
+                    <br />
+    
+                    <label><b><h3>9. Loan Amount term: </h3></b></label><br>
+                    <input type="text" style="color: black;" name="loanterm"/><br>
+                    <br />
+    
+                    <label><b><h3>10. Credit History: </h3></b></label><br>
+                    <input type="radio" id="1" name="hist" value="1"/>
+                    <label for="1"><h4>1</h4></label><br>
+                    <input type="radio" id="2" name="hist" value="2" />
+                    <label for="2"><h4>2</h4></label><br>
+                    <input type="radio" id="3" name="hist" value="3" />
+                    <label for="3"><h4>3</h4></label><br>
+                    <input type="radio" id="4" name="hist" value="4" />
+                    <label for="4"><h4>4</h4></label><br>
+                    <input type="radio" id="5" name="hist" value="5" />
+                    <label for="5"><h4>5</h4></label><br>
+                    <br />
+    
+                    <label><b><h3>11. Property Area: </h3></b></label><br>
+                    <input type="radio" id="1" name="area" value="Urban"/>
+                    <label for="1"><h4>Urban</h4></label><br>
+                    <input type="radio" id="2" name="area" value="Semiurban" />
+                    <label for="2"><h4>Semiurban</h4></label><br>
+                    <input type="radio" id="3" name="area" value="Rural" />
+                    <label for="3"><h4>Rural</h4></label><br>
+                    <br />
+                    <button class="btn" style="color: black; text-decoration: solid;"><input type='submit' /></button>
+                </form>
+            </div>
+			 
+			</div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
